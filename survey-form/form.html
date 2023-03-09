@@ -20,30 +20,36 @@
                 <label id="name-label"> Name <input placeholder="Full Name" type="text" id="name" required/> </label>
                 <label id="email-label"> Email <input placeholder="Email Address" type="email" id="email" required /></label>
                 <label id="number-label"> Age <input type="number" placeholder="30" min="18" max="65"></label>
+                <label id="degree-label"> Your latest degree 
+                    <select>
+                        <option disabled selected value> Chose your degree</option>
+                        <option> Diploma </option>
+                        <option> Bacholeres </option>
+                        <option> Masters  </option>
+                    </select>
+                </label>
             </fieldset>
 
             <fieldset>
-                <label> Your latest degree 
-                <select>
-                    <option disabled selected value> Chose your degree</option>
-                    <option> Diploma </option>
-                    <option> Bacholeres </option>
-                    <option> Masters  </option>
-                </select>
-                </label>
-                <div id="Role"> <label> What's your role in web dev? </label>
+                <div id="role"> <label> What's your role in web dev? </label>
                  <label> <input type="radio" name="role"> Backend </label>
                  <label> <input type="radio" name="role"> Frontend</label>
                  <label> <input type="radio" name="role"> FullStack</label>
                 </div>
-                <div id="Languages"> <label> Chose the languages that you work with </label>
+                <div id="languages"> <label> Chose the languages or frameworks that you work with </label>
                  <label> <input value="html" type="checkbox"> HTML </label>
                  <label> <input value="css" type="checkbox"> CSS </label>
                  <label> <input value="js" type="checkbox"> Javascript </label>
+                 <label> <input value="js" type="checkbox"> JQuery </label>
+                 <label> <input value="js" type="checkbox"> Angular </label>
+                 <label> <input value="js" type="checkbox"> React </label>
+                 <label> <input value="js" type="checkbox"> PHP </label>
+                 <label> <input value="js" type="checkbox"> C# </label>
+                 <label> <input value="js" type="checkbox"> Python </label>
                  </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="extra">
                 <label> Extra Comments
                 <textarea rows="4"> </textarea>
             </label>

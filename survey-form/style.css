@@ -26,10 +26,11 @@ p{
 form{
  margin: 0 auto;
  margin-bottom: 100px;
- width:20%;
+ width: 40%;
+ min-width: 300px;
  background-color: rgb(255,255,255);
  border-radius: 15px;
- padding: 20px 100px;
+ padding: 20px 30px;
  box-shadow: 8px 8px 3px -2px rgba(10,10,10,0.5);
  color: rgb(0,0,0);
 }
@@ -39,6 +40,7 @@ fieldset{
     text-align: left;
     border:none;
     font-size: 1.2rem;
+    padding: 0;
 }
 
 fieldset:last-of-type{
@@ -67,13 +69,33 @@ input:active{
     display: block;
     width:100%;
 }
+
 select{
-    display: block;
-    margin: 15px auto;
+    float:right;
+    outline: none;
 }
 
-#Role{
-    margin: 10px 0;
+select:focus{
+    border:none;
+    outline:none;
+}
+
+option{
+    border:none;
+    outline: none;
+
+}
+option:focus{
+    border:none;
+    outline:none;
+}
+
+#role{
+    margin: 2em 0 1em 0;
+}
+
+#role > label:first-of-type{
+    margin-bottom: 0.8em;
 }
 
 #submit{
@@ -106,10 +128,39 @@ label{
     display: block;
 }
 
+
+#role > label:first-of-type{
+    margin-top: 2em;
+}
+
+
+#languages > label:first-of-type{
+    display: block;
+    margin: 2em 0 10px -5px;
+}
+
+#languages > label{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+
+
+
+
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+}
+
 #personalInfo > label:first-of-type {
     margin-top:0px;
 }
 
 #personalInfo > label {
-    margin-top:40px;
+    margin-top:2em;
+}
+
+#extra{
+    margin-top: 30px;
 }
