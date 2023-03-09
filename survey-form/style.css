@@ -1,0 +1,107 @@
+html{
+    font-family:ubuntu;
+    font-size:16px;
+}
+
+body{
+    background-color:rgba(48,177,113,255);
+    margin:0;
+    color:black;
+}
+
+header{
+    width: 60%;
+    margin: 30px auto;
+    text-align:center;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+form{
+ margin: 0 auto;
+ margin-bottom: 100px;
+ width:20%;
+ background-color: rgb(255,255,255);
+ border-radius: 15px;
+ padding: 10px 100px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ color: rgb(0,0,0);
+}
+
+fieldset{
+    margin: 0 auto;
+    text-align: left;
+    border:none;
+    font-size: 1.2rem;
+}
+
+fieldset:last-of-type{
+    border:none;
+}
+
+input{
+    margin: 10px 0;
+    border:none;
+    border-bottom: 1px solid gray;
+}
+
+input:focus{
+    border:none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+input:active{
+    outline:none;
+    border:none;
+    border-bottom: 1px solid;
+}
+
+#personalInfo > label > input {
+    display: block;
+    width:100%;
+}
+select{
+    display: block;
+    margin: 15px auto;
+}
+
+#Role{
+    margin: 10px 0;
+}
+
+#submit{
+    margin: 10px auto;
+    display: block;
+    background-color: rgba(53,216,140,255);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border:none;
+    padding: 5px;
+    color:white;
+    width: 150px;
+}
+
+#submit:hover{
+    background-color:rgba(53,196,140,255);
+}
+
+textarea{
+    margin: 10px 0;
+    width: 100%;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+label{
+    display: block;
+}
