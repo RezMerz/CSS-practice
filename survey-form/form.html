@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <title> 
             Survey Form
@@ -19,9 +19,9 @@
             <fieldset id="personalInfo">
                 <label id="name-label"> Name <input placeholder="Full Name" type="text" id="name" required/> </label>
                 <label id="email-label"> Email <input placeholder="Email Address" type="email" id="email" required /></label>
-                <label id="number-label"> Age <input type="number" placeholder="30" min="18" max="65"></label>
+                <label id="number-label"> Age <input type="number" id="number" placeholder="30" min="18" max="65"></label>
                 <label id="degree-label"> Your latest degree 
-                    <select>
+                    <select id="dropdown">
                         <option disabled selected value> Chose your degree</option>
                         <option> Diploma </option>
                         <option> Bacholeres </option>
@@ -32,9 +32,9 @@
 
             <fieldset>
                 <div id="role"> <label> What's your role in web dev? </label>
-                 <label> <input type="radio" name="role"> Backend </label>
-                 <label> <input type="radio" name="role"> Frontend</label>
-                 <label> <input type="radio" name="role"> FullStack</label>
+                 <label> <input type="radio" name="role" value="backend"> Backend </label>
+                 <label> <input type="radio" name="role" value="frontend"> Frontend</label>
+                 <label> <input type="radio" name="role" value="fullstack"> FullStack</label>
                 </div>
                 <div id="languages"> <label> Chose the languages or frameworks that you work with </label>
                  <label> <input value="html" type="checkbox"> HTML </label>
